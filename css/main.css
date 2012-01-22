@@ -7,10 +7,46 @@ body {
     color: #333;
 }
 
+a,
+a:visited {
+    color: DodgerBlue;
+}
+
+a:hover {
+    color: DeepSkyBlue;
+}
+
 h1 {
     font-size: 32px;
     color: gray;
-    text-align: center;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+h1:before,
+h1:after {
+    content: " @@ ";
+}
+
+h2 {
+    font-size: 24px;
+    color: red;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+h2:before {
+    content: "--- ";
+}
+
+h2:nth-of-type(even) {
+    color: green;
+}
+
+h2:nth-of-type(even):before {
+    content: "+++ ";
+}
+
+h3 {
+    font-size: 16px;
 }
 
 .unified {
@@ -19,4 +55,13 @@ h1 {
 
 .diff {
     color: green;
+}
+
+dt {
+    float: left;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 5em;
 }
