@@ -7,9 +7,19 @@ body {
     color: #333;
 }
 
+a,
+a:visited {
+    color: DodgerBlue;
+}
+
+a:hover {
+    color: DeepSkyBlue;
+}
+
 h1 {
     font-size: 32px;
     color: gray;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 h1:before,
@@ -19,19 +29,24 @@ h1:after {
 
 h2 {
     font-size: 24px;
-    color: green;
+    color: red;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 h2:before {
+    content: "--- ";
+}
+
+h2:nth-of-type(even) {
+    color: green;
+}
+
+h2:nth-of-type(even):before {
     content: "+++ ";
 }
 
-h2:nth-child(2n) {
-    color: red;
-}
-
-h2:nth-child(2n):before {
-    content: "--- ";
+h3 {
+    font-size: 16px;
 }
 
 .unified {
@@ -40,4 +55,13 @@ h2:nth-child(2n):before {
 
 .diff {
     color: green;
+}
+
+dt {
+    float: left;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 5em;
 }
