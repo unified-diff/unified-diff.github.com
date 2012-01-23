@@ -58,6 +58,7 @@ h3 {
 }
 
 dt {
+    clear: both;
     float: left;
     font-weight: bold;
 }
