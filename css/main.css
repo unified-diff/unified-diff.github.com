@@ -37,11 +37,11 @@ h2:before {
     content: "--- ";
 }
 
-h2:nth-of-type(even) {
+section:nth-of-type(odd) h2 {
     color: green;
 }
 
-h2:nth-of-type(even):before {
+section:nth-of-type(odd) h2:before {
     content: "+++ ";
 }
 
