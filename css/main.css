@@ -18,6 +18,7 @@ h1 {
     font-size: 32px;
     color: gray;
     text-shadow: 1px 1px 1px #ccc;
+    padding: 70px 20px 20px 20px;
 }
 
 h1:before,
@@ -29,6 +30,7 @@ h2 {
     font-size: 24px;
     color: red;
     text-shadow: 1px 1px 1px #ccc;
+    margin: 10px 0px 25px 0px;
 }
 
 h2:before {
@@ -64,3 +66,16 @@ dt {
 dd {
     margin-left: 5em;
 }
+
+#intro {
+    padding: 20px;
+}
+
+#get-involved {
+    padding: 20px 0 30px 0;
+}
+
+.nav-tabs a {
+    font-size: 1.3em;
+}
+
