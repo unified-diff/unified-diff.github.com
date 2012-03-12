@@ -1,0 +1,43 @@
+
+.attendn ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.attendn li {
+    position: relative;
+    line-height: 47px;
+}
+
+.attendn span,
+.attendn a {
+    display: inline-table;
+    font-size: 1.3em;
+}
+
+.attendn a {
+    cursor: pointer;
+}
+
+.attendn img {
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.attendn .delete {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: none;
+    font-size: 0.8em;
+}
+
+.attendn li:hover .delete {
+    display: block;
+}
+
+.attendn .controls .name {
+    width: 150px;
+    margin: 0 3px 9px 4px;
+}
+

@@ -83,3 +83,15 @@ dd {
     font-size: 1.3em;
 }
 
+/*==== attendn ====*/
+
+.attendn ul {
+    max-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.attendn li .delete {
+    right: 10px;
+}
+
