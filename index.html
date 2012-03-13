@@ -146,12 +146,11 @@
             
             // iframes had attributes important to functionality but not strictly allowed in this doctype
             // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
-            $(document).ready(function() {
+            $(function() {
                 $('iframe.iframe-video').attr({
                         allowFullScreen:'allowFullScreen',
                         mozallowfullscreen:'mozallowfullscreen',
-                        webkitAllowFullScreen:'webkitAllowFullScreen',
-
+                        webkitAllowFullScreen:'webkitAllowFullScreen'
                     });
             });
         </script>
