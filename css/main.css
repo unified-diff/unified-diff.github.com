@@ -95,3 +95,13 @@ dd {
     right: 10px;
 }
 
+
+/*==== iframe map and video====*/
+.iframe-map, .iframe-video {
+    margin:0;
+    border:none;
+    outline:none;
+    overflow:hidden;
+}
+
+
