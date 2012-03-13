@@ -15,16 +15,6 @@ $(function() {
             .addClass( 'name' )
             .appendTo( controls );
 
-        var onDeleteClick = function( event ) {
-            var link = $( event.target );
-            var li = link.parent();
-            var person = link.data( 'person' );
-            api( 'DELETE', '', null, person.objectId );
-            li.slideUp(function() {
-                li.remove();
-            });
-        };
-
         var addPerson = function( person ) {
             var item = $( '<li></li>' );
             $( '<img></img>' )
@@ -33,12 +23,6 @@ $(function() {
             $( '<a></a>' )
                 .attr({ href: 'http://twitter.com/' +person.name })
                 .html( person.name )
-                .appendTo( item );
-            $( '<a></a>' )
-                .addClass( 'delete' )
-                .html( 'Delete' )
-                .data( 'person', person )
-                .click( onDeleteClick )
                 .appendTo( item );
             item.prependTo( peopleContainer );
         };
