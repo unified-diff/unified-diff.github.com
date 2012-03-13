@@ -63,7 +63,7 @@
                                     <dt>23:00</dt>
                                     <dd>Shutdown</dd>
                                 </dl>
-                                <iframe src="http://www.map-generator.org/d14e5de2-7969-4caf-b3d4-6e37938f319a/iframe-map.aspx" scrolling="no" height="350px" width="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <iframe class="iframe-map" src="http://www.map-generator.org/d14e5de2-7969-4caf-b3d4-6e37938f319a/iframe-map.aspx" height="350" width="450" scrolling="no" frameBorder="0"></iframe>
                             </section>
                         </div>
                         <div class="span4">
@@ -89,7 +89,7 @@
 
                                 <h3>Getting Clojure - An overview of how functional programming is now proper.</h3>
                                 <p>Rod Pugh - <a href="http://twitter.com/rodnaph" target="_blank">@rodnaph</a></p>
-                                <p><a id="clojure-overview"><iframe src="//player.vimeo.com/video/38352572?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a></p>
+                                <p><a id="clojure-overview"></a><iframe class="iframe-video" src="//player.vimeo.com/video/38352572?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
                                 <p>source code available at <a href="https://github.com/rodnaph/clojure-talk">https://github.com/rodnaph/clojure-talk</a></p>
 
                                 <h3>Testability (It's an -ility) - Inside the emergent software development skill-set that is Test Engineering.</h3>
@@ -104,19 +104,19 @@
 
                                 <h3>How to handle your terminal like a boss</h3>
                                 <p>Warren Seymour - <a href="http://twitter.com/woogoose" target="_blank">@woogoose</a></p>
-                                <p><a id="term-boss"><iframe src="//player.vimeo.com/video/37690053?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a></p>
+                                <p><a id="term-boss"></a><iframe class="iframe-video" src="//player.vimeo.com/video/37690053?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
                                 <p>.vimrc etc available
                                 at <a href="https://github.com/warrenseymour/dotfiles">https://github.com/warrenseymour/dotfiles</a></p>
 
                                 <h3>Clean Code</h3>
                                 <p>Gavin Davies - <a href="http://twitter.com/gavd_uk" target="_blank">@gavd_uk</a></p>
-                                <p><a id="clean-code"><iframe src="//player.vimeo.com/video/36714130?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a></p>
+                                <p><a id="clean-code"></a><iframe class="iframe-video" src="//player.vimeo.com/video/36714130?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
                                 <p>source code available
                                 at <a href="https://github.com/gavD/refactoring-to-clean-code">https://github.com/gavD/refactoring-to-clean-code</a></p>
 
                                 <h3>The Loneliness of a Long Distance Coder</h3>
                                 <p>Carey Hiles - <a href="http://twitter.com/handybitesize" target="_blank">@handybitesize</a></p>
-                                <p><a id="lone-coder"><iframe src="//player.vimeo.com/video/37279704?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a></p>
+                                <p><a id="lone-coder"></a><iframe class="iframe-video" src="//player.vimeo.com/video/37279704?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
 
                             </section>
                         </div>
@@ -142,7 +142,17 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="attendn/js/attendn.js"></script>
         <script type="text/javascript">
-            $('ul.nav-tab').tab('show')
+            $('ul.nav-tab').tab('show');
+            
+            // iframes had attributes important to functionality but not strictly allowed in this doctype
+            // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
+            $(function() {
+                $('iframe.iframe-video').attr({
+                        allowFullScreen:'allowFullScreen',
+                        mozallowfullscreen:'mozallowfullscreen',
+                        webkitAllowFullScreen:'webkitAllowFullScreen'
+                    });
+            });
         </script>
 
     </body>
