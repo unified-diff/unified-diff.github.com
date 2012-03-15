@@ -4,115 +4,156 @@
         <meta charset="utf-8" />
         <title>unified.diff</title>
 
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="css/main.css" type="text/css" />
+
     </head>
 
     <body>
-        <h1><span class="unified">unified</span>.<span class="diff">diff</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1><span class="unified">unified</span>.<span class="diff">diff</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="intro">
+                        <p>For too long, Cardiff's software development community has been
+                        fragmented by language, discipline, and platform.</p>
+
+                        <p><span class="unified">unified</span>.<span class="diff">diff</span> is a
+                        monthly meet-up for anybody involved or interested in the field of software
+                        development.</p>
+
+                        <p>We hold tech talks, and trade war stories.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#next-event">Upcoming Meetup</a></li>
+                        <li><a data-toggle="tab" href="#previous-events">Previous Events & Talk Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+
             
-        <section id="intro">
-            <p>For too long, Cardiff's software development community has been
-            fragmented by language, discipline, and platform.</p>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="next-event">
+                    <div class="row">
+                        <div class="span8">
+                            <section id="next">
+                                <h2>next event</h2>
+                                <h3>4th April 2012: O'Neill's (Trinity St.)</h3>
+                                <p>Amazing turnout on meetup #2, the next will be in the same place on April 4th.  We're learning a lot about
+                                    organisation and will make sure there's more space and less noise.  Same format, 3 speakers...</p>
+                                <dl>
+                                    <dt>19:00</dt>
+                                    <dd>Interfacing</dd>
+                                    <dt>19:20</dt>
+                                    <dd>Walkthrough</dd>
+                                    <dt>19:30</dt>
+                                    <dd>Speakers to be announced shortly!</dd>
+                                    <dt>21:00</dt>
+                                    <dd>Memory fragmentation</dd>
+                                    <dt>23:00</dt>
+                                    <dd>Shutdown</dd>
+                                </dl>
+                                <iframe class="iframe-map" src="http://www.map-generator.org/d14e5de2-7969-4caf-b3d4-6e37938f319a/iframe-map.aspx" height="350" width="450" scrolling="no" frameBorder="0"></iframe>
+                            </section>
+                        </div>
+                        <div class="span4">
+                            <section id="attendn">
+                                <h2>you 'tendin?</h2>
+                                <p>If you're thinking of coming to the next event whack your twitter name
+                                    in below so we've got an idea of numbers.  Thanks!</p>
+                                <div class="attendn"
+                                     data-meetupid="ud20120307"
+                                     data-parseappid="0zU3tXSe6hix0imtvBCXFPQMsljwglGl8WsYBrRe"
+                                     data-parserestkey="JQEcXQlTnHtlXcgkt8MTPy8JouLaavfR80DcaJSf"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
 
-            <p><span class="unified">unified</span>.<span class="diff">diff</span> is a
-            monthly meet-up for anybody involved or interested in the field of software
-            development.</p>
+                <div class="tab-pane" id="previous-events">
+                    <div class="row">
+                        <div class="span12">
+                            <section id="previous">
 
-            <p>We hold tech talks, and trade war stories.</p>
-        </section>
+                                <h2>7th March 2012</h2>
 
-        <section id="next">
-            <h2>next event</h2>
-            <h3>7th March 2012: O'Neill's (Trinity St.)</h3>
-            <p>Following the success of our first event, we are already stoked to be
-            organising the next one.</p>
-            <div class="read-more">
-                <dl>
-                    <dt>19:00</dt>
-                    <dd>Interfacing</dd>
-                    <dt>19:20</dt>
-                    <dd>Walkthrough</dd>
-                    <dt>19:30</dt>
-                    <dd>
-                        <strong>Getting Clojure - An overview of how functional programming is now proper.</strong><br/>
-                        Rod Pugh - <a href="http://twitter.com/rodnaph" target="_blank">@rodnaph</a>
-                    </dd>
-                    <dt>20:00</dt>
-                    <dd>
-                        <strong>Testability (It's an -ility) - Inside the emergent software development skill-set that is Test Engineering.</strong><br />
-                        Sean Robbins - <a href="http://twitter.com/sean_robbins" target="_blank">@sean_robbins</a>
-                    </dd>
-                    <dt>20:30</dt>
-                    <dd>
-                        <strong>A Scientist in an Adventure with Pirates - A whistlestop tour of why a developer was hired to help on <a href="http://www.aardman.com/">Aardman's</a> latest feature film.</strong><br/>
-                        Ian Wootten - <a href="http://twitter.com/niftydigits" target="_blank">@niftydigits</a>
-                    </dd>
-                    <dt>21:00</dt>
-                    <dd>Memory fragmentation</dd>
-                    <dt>23:00</dt>
-                    <dd>Shutdown</dd>
-                </dl>
-                <iframe src="http://www.map-generator.org/d14e5de2-7969-4caf-b3d4-6e37938f319a/iframe-map.aspx" scrolling="no" height="350px" width="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <h3>Getting Clojure - An overview of how functional programming is now proper.</h3>
+                                <p>Rod Pugh - <a href="http://twitter.com/rodnaph" target="_blank">@rodnaph</a></p>
+                                <p><a id="clojure-overview"></a><iframe class="iframe-video" src="//player.vimeo.com/video/38352572?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
+                                <p>source code available at <a href="https://github.com/rodnaph/clojure-talk">https://github.com/rodnaph/clojure-talk</a></p>
+
+                                <h3>Testability (It's an -ility) - Inside the emergent software development skill-set that is Test Engineering.</h3>
+                                <p>Sean Robbins - <a href="http://twitter.com/sean_robbins" target="_blank">@sean_robbins</a></p>
+                                <p><i>video coming soon...</i></p>
+
+                                <h3>A Scientist in an Adventure with Pirates - A whistlestop tour of why a developer was hired to help on <a href="http://www.aardman.com/">Aardman's</a> latest feature film.</h3>
+                                <p>Ian Wootten - <a href="http://twitter.com/niftydigits" target="_blank">@niftydigits</a></p>
+                                <p><i>video coming soon...</i></p>
+
+                                <h2>1st February 2012</h2>
+
+                                <h3>How to handle your terminal like a boss</h3>
+                                <p>Warren Seymour - <a href="http://twitter.com/woogoose" target="_blank">@woogoose</a></p>
+                                <p><a id="term-boss"></a><iframe class="iframe-video" src="//player.vimeo.com/video/37690053?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
+                                <p>.vimrc etc available
+                                at <a href="https://github.com/warrenseymour/dotfiles">https://github.com/warrenseymour/dotfiles</a></p>
+
+                                <h3>Clean Code</h3>
+                                <p>Gavin Davies - <a href="http://twitter.com/gavd_uk" target="_blank">@gavd_uk</a></p>
+                                <p><a id="clean-code"></a><iframe class="iframe-video" src="//player.vimeo.com/video/36714130?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
+                                <p>source code available
+                                at <a href="https://github.com/gavD/refactoring-to-clean-code">https://github.com/gavD/refactoring-to-clean-code</a></p>
+
+                                <h3>The Loneliness of a Long Distance Coder</h3>
+                                <p>Carey Hiles - <a href="http://twitter.com/handybitesize" target="_blank">@handybitesize</a></p>
+                                <p><a id="lone-coder"></a><iframe class="iframe-video" src="//player.vimeo.com/video/37279704?title=0&amp;byline=0&amp;portrait=0" width="600" height="400" scrolling="no" frameBorder="0"></iframe></p>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-
-        <section id="previous">
-            <h2>previous event review</h2>
-            <h3>1st February 2012</h3>
-            <p>We had a great turnout for the first event.  All talks were received
-            very well, massive thanks to the speakers and to everyone who made the
-            trip to attend.</p>
-            <p>Video recordings of the remaining tech talks will be available very soon.</p>
-            <div class="read-more">
-                
-                <a id="taster"><iframe src="//player.vimeo.com/video/36267777?title=0&amp;byline=0&amp;portrait=0" width="450" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/36267777">Unified Diff - 1st Feb 2012</a> from <a href="http://vimeo.com/user7999622">Suma Pugh</a> on Vimeo.</p></a>
-                
-                <dl>
-                    <dt>19:00</dt>
-                    <dd>Interfacing</dd>
-                    <dt>19:20</dt>
-                    <dd>Walkthrough</dd>
-                    <dt>19:30</dt>
-                    <dd>
-                        <strong>How to handle your terminal like a boss</strong><br/>
-                        Warren Seymour - <a href="http://twitter.com/woogoose" target="_blank">@woogoose</a>
-                        <a id="term-boss"><iframe src="//player.vimeo.com/video/37690053?title=0&amp;byline=0&amp;portrait=0" width="450" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/37690053">How To Handle Your Terminal Like A Boss</a> on Vimeo.</p></a>
-                        <p> - .vimrc etc available
-                        at <a href="https://github.com/warrenseymour/dotfiles">https://github.com/warrenseymour/dotfiles</a></p>
-                    </dd>
-                    <dt>20:00</dt>
-                    <dd>
-                        <strong>Clean Code</strong><br />
-                        Gavin Davies - <a href="http://twitter.com/gavd_uk" target="_blank">@gavd_uk</a>
-                        <a id="clean-code"><iframe src="//player.vimeo.com/video/36714130?title=0&amp;byline=0&amp;portrait=0" width="450" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/36714130">Clean Code</a> on Vimeo.</p></a>
-                        <p>source code available
-                        at <a href="https://github.com/gavD/refactoring-to-clean-code">https://github.com/gavD/refactoring-to-clean-code</a></p>
-                    </dd>
-                    <dt>20:30</dt>
-                    <dd>
-                        <strong>The Loneliness of a Long Distance Coder</strong><br/>
-                        Carey Hiles - <a href="http://twitter.com/handybitesize" target="_blank">@handybitesize</a>
-                        <a id="lone-coder"><iframe src="//player.vimeo.com/video/37279704?title=0&amp;byline=0&amp;portrait=0" width="450" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/37279704">The Loneliness Of A Long Distance Coder</a> on Vimeo.</p></a>
-                    </dd>
-                    <dt>21:00</dt>
-                    <dd>Memory fragmentation</dd>
-                    <dt>23:00</dt>
-                    <dd>Shutdown</dd>
-                </dl>
-                
-                <p><img src="img/20120201/clapping.png" alt="Audience" width="450" height="216" /></p>
-                
+            <div class="row">
+                <div class="span12">
+                    <section id="get-involved">
+                        <h2>get involved</h2>
+                        <p> If you'd like to give a tech talk, or have something you'd
+                            like to share at a future event, we'd love to hear from you.
+                            Contact us via Twitter - <a href="http://twitter.com/unifieddiff">@unifieddiff</a> </p>
+                    </section>
+                </div>
             </div>
-        </section>
-        <section id="get-involved">
-            <h2>get involved</h2>
-            <p>
-                If you'd like to give a tech talk, or have something you'd
-                like to share at a future event, we'd love to hear from you.
-            </p>
-            <p>
-                Contact us via Twitter - <a href="http://twitter.com/unifieddiff">@unifieddiff</a>
-            </p>
-        </section>
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="attendn/css/basic.css" />
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="attendn/js/attendn.js"></script>
+        <script type="text/javascript">
+            $('ul.nav-tab').tab('show');
+            
+            // iframes had attributes important to functionality but not strictly allowed in this doctype
+            // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
+            $(function() {
+                $('iframe.iframe-video').attr({
+                        allowFullScreen:'allowFullScreen',
+                        mozallowfullscreen:'mozallowfullscreen',
+                        webkitAllowFullScreen:'webkitAllowFullScreen'
+                    });
+            });
+        </script>
+
     </body>
 </html>
