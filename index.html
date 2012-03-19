@@ -150,16 +150,21 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="attendn/js/attendn.js"></script>
         <script type="text/javascript">
-            $('ul.nav-tab').tab('show');
-            
             // iframes had attributes important to functionality but not strictly allowed in this doctype
             // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
             $(function() {
                 $('iframe.iframe-video').attr({
-                        allowFullScreen:'allowFullScreen',
-                        mozallowfullscreen:'mozallowfullscreen',
-                        webkitAllowFullScreen:'webkitAllowFullScreen'
-                    });
+                    allowFullScreen:'allowFullScreen',
+                    mozallowfullscreen:'mozallowfullscreen',
+                    webkitAllowFullScreen:'webkitAllowFullScreen'
+                });
+                var tabs = [ '#previous-events' ];
+                $.each( tabs, function(i,name) {
+                    if ( window.location.hash == name ) {
+                        $( '.nav-tabs a[href=' +name+ ']' )
+                            .tab( 'show' );
+                    }
+                });
             });
         </script>
 
