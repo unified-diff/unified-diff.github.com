@@ -172,9 +172,13 @@
                     webkitAllowFullScreen:'webkitAllowFullScreen'
                 });
                 var tabs = [ '#previous-events' ];
+                $( '#previous-events a' ).each(function(i,el) {
+                    var id = $( el ).attr( 'id' );
+                    if ( id ) { tabs.push( '#' + id ); }
+                });
                 $.each( tabs, function(i,name) {
                     if ( window.location.hash == name ) {
-                        $( '.nav-tabs a[href=' +name+ ']' )
+                        $( '.nav-tabs a[href=#previous-events]' )
                             .tab( 'show' );
                     }
                 });
