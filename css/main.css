@@ -83,6 +83,16 @@ dd {
     font-size: 1.3em;
 }
 
+.social {
+    float: right;
+    text-align: right;
+    margin: 30px 0;
+}
+
+.social div {
+    margin: 5px;
+}
+
 /*==== attendn ====*/
 
 .attendn ul {
