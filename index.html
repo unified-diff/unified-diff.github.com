@@ -166,12 +166,6 @@
             // iframes had attributes important to functionality but not strictly allowed in this doctype
             // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
             $(function() {
-                function toThoseWithIds( element ) {
-                    return true;
-                }
-                function toId( element ) {
-                    return element.id;
-                }
                 $('iframe.iframe-video').attr({
                     allowFullScreen:'allowFullScreen',
                     mozallowfullscreen:'mozallowfullscreen',
