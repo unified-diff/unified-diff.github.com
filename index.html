@@ -166,15 +166,25 @@
             // iframes had attributes important to functionality but not strictly allowed in this doctype
             // add them in after as they are an enhancement likely to be enjoyed only by browsers supporting JS anyway.
             $(function() {
+                function toThoseWithIds( element ) {
+                    return true;
+                }
+                function toId( element ) {
+                    return element.id;
+                }
                 $('iframe.iframe-video').attr({
                     allowFullScreen:'allowFullScreen',
                     mozallowfullscreen:'mozallowfullscreen',
                     webkitAllowFullScreen:'webkitAllowFullScreen'
                 });
                 var tabs = [ '#previous-events' ];
+                $( '#previous-events a' ).each(function(i,el) {
+                    var id = $( el ).attr( 'id' );
+                    if ( id ) { tabs.push( '#' + id ); }
+                });
                 $.each( tabs, function(i,name) {
                     if ( window.location.hash == name ) {
-                        $( '.nav-tabs a[href=' +name+ ']' )
+                        $( '.nav-tabs a[href=#previous-events]' )
                             .tab( 'show' );
                     }
                 });
