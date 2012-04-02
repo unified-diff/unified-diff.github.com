@@ -83,6 +83,25 @@ dd {
     font-size: 1.3em;
 }
 
+/*===== social links =====*/
+
+.social {
+    float: right;
+    text-align: right;
+    margin: 30px 0;
+}
+
+.social div {
+    margin: 5px;
+    min-height: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons-22.png);
+    padding-right: 28px;
+}
+
+.social .twitter { background-position: right -2px; }
+.social .irc { background-position: right -46px; }
+
 /*==== attendn ====*/
 
 .attendn ul {
