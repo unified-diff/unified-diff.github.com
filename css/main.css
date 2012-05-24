@@ -41,6 +41,12 @@ h2:before {
     content: "--- ";
 }
 
+div.container {
+    background-image: url(../img/videos.png);
+    background-repeat: no-repeat;
+    background-position: 500px 105px;
+}
+
 section:nth-of-type(odd) h2 {
     color: green;
 }
