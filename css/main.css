@@ -118,7 +118,7 @@ dd {
 }
 
 /*==== iframe map and video====*/
-.iframe-map, .iframe-video {
+.iframe-video {
     margin:0;
     border:none;
     outline:none;
