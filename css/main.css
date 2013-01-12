@@ -89,6 +89,10 @@ dd {
     font-size: 1.3em;
 }
 
+.coming-soon {
+    font-style: italic;
+}
+
 /*===== social links =====*/
 
 .social {
