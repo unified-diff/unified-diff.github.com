@@ -57,6 +57,7 @@ section:nth-of-type(odd) h2:before {
 
 h3 {
     font-size: 16px;
+    margin: 25px 0 15px 0;
 }
 
 .unified {
@@ -128,3 +129,46 @@ dd {
     outline:none;
     overflow:hidden;
 }
+
+/*======== blog ==========*/
+
+.rss {
+    float: right;
+    background-image: url(../img/icons-22.png);
+    background-position: right -134px;
+    background-repeat: no-repeat;
+    padding: 0 30px 0 0;
+    height: 22px;
+    line-height: 22px;
+}
+
+.posts {
+    margin: 0 0 0 20px;
+    list-style-type: none;
+}
+
+.posts .post {
+    padding: 0 0 20px 0;
+    border-bottom: 1px #ddd solid;
+}
+
+.posts h2 {
+    margin-bottom: 5px;
+}
+
+.posts h2:before {
+    content: none;
+}
+
+.posts .summary {
+    font-style: italic;
+}
+
+.posts .date {
+    color: #aaa;
+}
+
+.post pre {
+    margin: 15px;
+}
+

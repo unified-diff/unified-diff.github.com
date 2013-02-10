@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>unified.diff</title>
-        <meta name="description" content="Monthly Cardiff-based tech meetup. We hold tech talks, and trade war stories." />
+{% include header.html %}
 
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="attendn/css/basic.css" />
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
+{{ content }}
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    </head>
+{% include footer.html %}
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <div class="social">
-                        <div class="twitter"><a href="https://twitter.com/unifieddiff">@UnifiedDiff</a></div>
-                        <div class="irc">chat.freenode.net - #udiff</div>
-                        <div class="mailing"><a href="http://lists.unifieddiff.co.uk">Mailing List</a></div>
-                    </div>
-                    <h1><span class="unified">unified</span>.<span class="diff">diff</span></h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="span6">
-                    <section id="intro">
-                        <p>For too long, Cardiff's software development community has been
-                        fragmented by language, discipline, and platform.</p>
-
-                        <p><span class="unified">unified</span>.<span class="diff">diff</span> is a
-                        monthly meet-up for anybody involved or interested in the field of software
-                        development.</p>
-
-                        <p>We hold tech talks, and trade war stories.</p>
-                    </section>
-                </div>
-            </div>
-
-            {{ content }}
-
-            <div class="row">
-                <div class="span12">
-                    <section id="get-involved">
-                        <h2>get involved</h2>
-                        <p> If you'd like to give a tech talk, or have something you'd
-                            like to share at a future event, we'd love to hear from you.
-                            Contact us via Twitter - <a href="http://twitter.com/unifieddiff">@unifieddiff</a> </p>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="attendn/js/attendn.js"></script>
-    </body>
-</html>

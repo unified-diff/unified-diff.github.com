@@ -2,3 +2,15 @@
 # enable dynamic recomimpiling of templates
 auto: true
 
+# the site name
+name: Unified Diff
+
+# a description of the site
+description: Cardiff Tech Meetup
+
+# url to the site
+url: http://unifieddiff.co.uk
+
+# enable code highlighting
+pygments: true
+
