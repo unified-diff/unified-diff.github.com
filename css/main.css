@@ -132,6 +132,16 @@ dd {
 
 /*======== blog ==========*/
 
+.rss {
+    float: right;
+    background-image: url(../img/icons-22.png);
+    background-position: right -134px;
+    background-repeat: no-repeat;
+    padding: 0 30px 0 0;
+    height: 22px;
+    line-height: 22px;
+}
+
 .posts {
     margin: 0 0 0 20px;
     list-style-type: none;
