@@ -1,0 +1,4 @@
+
+# enable dynamic recomimpiling of templates
+auto: true
+
