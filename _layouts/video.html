@@ -1,0 +1,11 @@
+{% include header.html %}
+
+{% assign tab-videos = 'active' %}
+{% include tabs.html %}
+
+<div class="video">
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+</div>
+
+{% include footer.html %}
