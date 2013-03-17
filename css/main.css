@@ -128,3 +128,31 @@ dd {
     outline:none;
     overflow:hidden;
 }
+
+/*======== photostream =======*/
+
+#photostream {
+    font-size: 3em;
+    color: #ddd;
+    text-align: center;
+    margin: 30px;
+}
+
+#photostream img {
+    width: 320px;
+    height: 240px;
+    border-radius: 5px;
+}
+
+#photostream img:first-child {
+    margin-right: 15px;
+}
+
+#photostream.loading img {
+    display: none;
+}
+
+#photostream.loading:after {
+    content: "Loading photostream...";
+}
+
