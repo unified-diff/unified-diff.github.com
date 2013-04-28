@@ -1,8 +1,6 @@
 body {
     font-family: Monaco, 'Andale Mono', 'Courier New', monospace;
     font-size: 12px;
-    width: 450px;
-    margin: 0 auto;
     background: #f5f5f5;
     color: #333;
 }
@@ -16,10 +14,15 @@ a:hover {
     color: DeepSkyBlue;
 }
 
+p {
+    margin: 5px 0 5px 0;
+}
+
 h1 {
     font-size: 32px;
     color: gray;
     text-shadow: 1px 1px 1px #ccc;
+    padding: 50px 20px 20px 20px;
 }
 
 h1:before,
@@ -31,10 +34,17 @@ h2 {
     font-size: 24px;
     color: red;
     text-shadow: 1px 1px 1px #ccc;
+    margin: 10px 0px 25px 0px;
 }
 
 h2:before {
     content: "--- ";
+}
+
+div.container {
+    background-image: url(../img/videos.png);
+    background-repeat: no-repeat;
+    background-position: 500px 145px;
 }
 
 section:nth-of-type(odd) h2 {
@@ -65,4 +75,56 @@ dt {
 
 dd {
     margin-left: 5em;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#get-involved {
+    padding: 20px 0 30px 0;
+}
+
+.nav-tabs a {
+    font-size: 1.3em;
+}
+
+.coming-soon {
+    font-style: italic;
+}
+
+/*===== social links =====*/
+
+.social {
+    float: right;
+    text-align: right;
+    margin: 30px 0;
+}
+
+.social div {
+    margin: 5px;
+    min-height: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons-22.png);
+    padding-right: 28px;
+}
+
+.social .twitter { background-position: right -2px; }
+.social .irc { background-position: right -46px; }
+.social .mailing { background-position: right -89px; }
+
+/*==== attendn ====*/
+
+.attendn ul {
+    max-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/*==== iframe map and video====*/
+.iframe-video {
+    margin:0;
+    border:none;
+    outline:none;
+    overflow:hidden;
 }
