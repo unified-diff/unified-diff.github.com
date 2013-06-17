@@ -5,15 +5,27 @@ layout: default
 {% assign tab-index = 'active' %}
 {% include tabs.html %}
 
-<div class="row">
+<div class="row" ng-controller="NextEventCtrl">
     <div class="span8">
-        <section id="next">
-
+        <section id="NextEventCtrl">
+            <div data-ng-repeat="event in events">
+                <h2 ng-bind="event.name"></h2>
+                <div ng-bind-html-unsafe="event.description"></div>
+            </div>
         </section>
     </div>
     <div class="span4">
         <section id="attendn">
-            
+            <h2>You 'tendin?</h2>
+            <p><a href="http://www.meetup.com/unified-diff">Sign up on our Meetup page!</a></p>
+            <div class="attendn">
+                <ul>
+                    <li data-ng-repeat="rsvp in rsvps" class="">
+                        <img src="{[{ rsvp.member_photo.thumb_link }]}" width="40" height="40"/>
+                        <a href="http://meetup.com/unified-diff/members/{[{ rsvp.member.member_id }]}">{[{ rsvp.member.name }]}</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </div>
 </div>
@@ -25,6 +37,14 @@ $(function() {
     if (video && $(video).length == 0) {
         window.location.href = 'videos.html' +video;
     }
+});
+
+$(document).ready(function() {
+    var app = document.getElementById('NextEventCtrl');
+    var scope = angular.element(app).scope();
+    scope.$apply(function() {
+        scope.loadNextEvent();
+    });
 });
 </script>
 
