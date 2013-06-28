@@ -8,6 +8,8 @@ app.config(function($interpolateProvider) {
 app.controller('NextEventCtrl', function ($scope, $http)
 {
     $scope.$on('$viewContentLoaded', $scope.init);
+    $scope.events = [];
+    $scope.rsvps = [];
 
     $scope.init = function () {
         $scope.loadNextEvent();

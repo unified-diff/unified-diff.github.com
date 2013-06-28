@@ -19,7 +19,7 @@ layout: default
             <h2>You 'tendin?</h2>
             <p><a href="http://www.meetup.com/unified-diff">Sign up on our Meetup page!</a></p>
             <div class="attendn">
-                <ul>
+                <ul ng-show="rsvps.length > 0">
                     <li data-ng-repeat="rsvp in rsvps" class="">
                         <img src="{[{ rsvp.member_photo.thumb_link }]}" width="40" height="40"/>
                         <a href="http://meetup.com/unified-diff/members/{[{ rsvp.member.member_id }]}">{[{ rsvp.member.name }]}</a>
