@@ -15,7 +15,7 @@ app.controller('NextEventCtrl', function ($scope, $http)
 
     $scope.loadNextEvent = function () {
         $.ajax({
-            url: 'http://localhost/unified-diff-meetup-proxy/web/index_dev.php/events.json',
+            url: 'http://unified-diff.marvelley.com/events.json',
             success: function (data) {
                 $scope.$apply(function () {
                     $scope.events = data;
@@ -30,7 +30,7 @@ app.controller('NextEventCtrl', function ($scope, $http)
 
     $scope.loadRsvps = function (event) {
         $.ajax({
-            url: 'http://localhost/unified-diff-meetup-proxy/web/index_dev.php/rsvps/' + event.id + '.json',
+            url: 'http://unified-diff.marvelley.com/rsvps/' + event.id + '.json',
             success: function (data) {
                 $scope.$apply(function () {
                     $scope.rsvps = data;
