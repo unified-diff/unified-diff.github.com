@@ -5,45 +5,27 @@ layout: default
 {% assign tab-index = 'active' %}
 {% include tabs.html %}
 
-<div class="row">
+<div class="row" ng-controller="NextEventCtrl">
     <div class="span8">
-        <section id="next">
-            <p>A massive thanks to the speakers and everyone who came to May's event at Fire Island!  We had
-            some technical 'teething issues' with the venue, but it's something we'll have sorted for June.
-            If you have any feedback and suggestions please let us know.</p>
-
-            <p>Also, if you'd like to speak at a future Unified Diff, or have some free time that you could
-            spare to helping organise an event then please get in touch with us.  You can reach us on Twitter,
-            on IRC, or via the mailing list - all linked in the top right of the page.</p>
-
-            <p>See you in June!</p>
-
-            <h2>next event</h2>
-            <h3>5th June 2013: <a href="http://www.fireislandcardiff.co.uk">Fire Island, Westgate Street, Cardiff</a></h3>
-            <dl>
-                <dt>19:00</dt>
-                <dd>Interfacing</dd>
-                <dt>19:30</dt>
-                <dd>Progressive Enhancement - Graham Bird (<a href="https://twitter.com/mrgrahambird">@mrgrahambird</a>). Find out what progressive enhancement means in practice and how it can be used to improve accessibility, SEO and the separation of concerns plus give your content editors the power to do things automagically!</dd>
-                <dt>21:00</dt>
-                <dd>Breaking Bugs - Ian Jenkins (<a href="https://twitter.com/jenko">@jenko</a>). As Software Developers we often come across the term 'bug', but what does it actually mean? We are going to be discussing the kinds of bugs we come across, why they happen, and what we can do to try to prevent them.</dd>
-                <dt>21:00</dt>
-                <dd>Memory fragmentation</dd>
-                <dt>23:00</dt>
-                <dd>Shutdown</dd>
-            </dl>
-            <img src="http://maps.google.com/maps/api/staticmap?center=51.479826,-3.181068&zoom=16&markers=51.869111,-2.255477|51.479873,-3.181175&size=500x300&sensor=true" alt="Map of Unified Diff Venue">
+        <section id="NextEventCtrl">
+            <div data-ng-repeat="event in events">
+                <h2 ng-bind="event.name"></h2>
+                <div ng-bind-html-unsafe="event.description"></div>
+            </div>
         </section>
     </div>
     <div class="span4">
         <section id="attendn">
-            <h2>you 'tendin?</h2>
-            <p>If you're thinking of coming to the next event whack your twitter name
-                in below so we've got an idea of numbers.  Thanks!</p>
-            <div class="attendn"
-                 data-meetupid="ud20130605"
-                 data-parseappid="0zU3tXSe6hix0imtvBCXFPQMsljwglGl8WsYBrRe"
-                 data-parserestkey="JQEcXQlTnHtlXcgkt8MTPy8JouLaavfR80DcaJSf"></div>
+            <h2>You 'tendin?</h2>
+            <p><a href="http://www.meetup.com/unified-diff">Sign up on our Meetup page!</a></p>
+            <div class="attendn">
+                <ul ng-show="rsvps.length > 0">
+                    <li data-ng-repeat="rsvp in rsvps" class="">
+                        <img src="{[{ rsvp.member_photo.thumb_link }]}" width="40" height="40"/>
+                        <a href="http://meetup.com/unified-diff/members/{[{ rsvp.member.member_id }]}">{[{ rsvp.member.name }]}</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </div>
 </div>
@@ -55,6 +37,14 @@ $(function() {
     if (video && $(video).length == 0) {
         window.location.href = 'videos.html' +video;
     }
+});
+
+$(document).ready(function() {
+    var app = document.getElementById('NextEventCtrl');
+    var scope = angular.element(app).scope();
+    scope.$apply(function() {
+        scope.loadNextEvent();
+    });
 });
 </script>
 
