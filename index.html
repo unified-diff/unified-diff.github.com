@@ -10,6 +10,7 @@ layout: default
         <section id="NextEventCtrl">
             <div data-ng-repeat="event in events">
                 <h2 ng-bind="event.name"></h2>
+                <h3>Location: <a href="http://www.porterscardiff.com/contact/" target="_BLANK">Porter's, Cardiff</a></h3>
                 <div ng-bind-html-unsafe="event.description"></div>
             </div>
         </section>

@@ -15,7 +15,7 @@ gem install jekyll --no-rdoc --no-ri
 Then after cloning the repo, change to the folder and start the Jekyll server...
 
 <pre>
-jekyll --server
+jekyll serve
 </pre>
 
 Jekyll is now running and you should be able to navigate to the following URL to view the website...
