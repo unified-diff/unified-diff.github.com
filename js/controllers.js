@@ -35,7 +35,10 @@ app.controller('NextEventCtrl', function ($scope, $http)
             url: 'http://unified-diff.marvelley.com/rsvps/' + event.id + '.json',
             success: function (data) {
                 $scope.$apply(function () {
-                    $scope.rsvps = data;
+                    var rsvps = _.filter(data, function(user){ 
+                        return user.response === 'yes'; 
+                    });
+                    $scope.rsvps = rsvps;
                 });
             }
         })
