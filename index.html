@@ -30,22 +30,3 @@ layout: default
         </section>
     </div>
 </div>
-
-<script type="text/javascript">
-$(function() {
-    // send user to video for old hash-style links
-    var video = window.location.hash;
-    if (video && $(video).length == 0) {
-        window.location.href = 'videos.html' +video;
-    }
-});
-
-$(document).ready(function() {
-    var app = document.getElementById('NextEventCtrl');
-    var scope = angular.element(app).scope();
-    scope.$apply(function() {
-        scope.loadNextEvent();
-    });
-});
-</script>
-
