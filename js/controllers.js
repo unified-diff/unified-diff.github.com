@@ -5,11 +5,21 @@ app.config(function($interpolateProvider) {
     $interpolateProvider.endSymbol('}]}');
 });
 
-app.controller('NextEventCtrl', function ($scope, $http)
-{
+app.controller('NextEventCtrl', function ($scope, $http) {
+    angular.extend($scope, {
+        events: [],
+        rsvps: [],
+
+        getThumb: function(rsvp) {
+            if (rsvp.member_photo) {
+                return rsvp.member_photo.thumb_link;
+            }
+
+            return "https://pbs.twimg.com/profile_images/1777603509/logo-128px_bigger.png";
+        }
+    });
+
     $scope.$on('$viewContentLoaded', $scope.init);
-    $scope.events = [];
-    $scope.rsvps = [];
 
     $scope.init = function () {
         $scope.loadNextEvent();

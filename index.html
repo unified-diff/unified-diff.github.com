@@ -22,7 +22,7 @@ layout: default
             <div class="attendn">
                 <ul ng-show="rsvps.length > 0">
                     <li data-ng-repeat="rsvp in rsvps" class="">
-                        <img src="{[{ rsvp.member_photo.thumb_link }]}" width="40" height="40"/>
+                        <img ng-src="{[{ getThumb(rsvp) }]}" width="40" height="40"/>
                         <a href="http://meetup.com/unified-diff/members/{[{ rsvp.member.member_id }]}">{[{ rsvp.member.name }]}</a>
                     </li>
                 </ul>
