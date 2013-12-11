@@ -121,6 +121,11 @@ dd {
     overflow-x: hidden;
 }
 
+.attendn ul li img {
+    vertical-align: middle;
+    margin: 3px 0;
+}
+
 /*==== iframe map and video====*/
 .iframe-video {
     margin:0;
