@@ -9,7 +9,7 @@ layout: default
     <div class="span8">
         <section id="NextEventCtrl">
             <div data-ng-repeat="event in events">
-                <h2>{[{ getEventTitle(event) }]}"></h2>
+                <h2>{[{ getEventTitle(event) }]}</h2>
                 <h3>Location: <a href="http://foundershub.co.uk/" target="_BLANK">Founder's Hub, Cardiff</a></h3>
                 <div ng-bind-html-unsafe="event.description"></div>
             </div>
