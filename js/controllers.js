@@ -49,6 +49,10 @@ angular.module('unifiedDiffApp', [])
             }
         },
 
+        getEventTitle: function(event) {
+            return moment(event.time).format("Do MMM @ ha") + " - " + event.name;
+        },
+
         init: function() {
             $scope.loadEvents().then($scope.loadRsvps);
         }
