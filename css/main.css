@@ -93,6 +93,12 @@ dd {
     font-style: italic;
 }
 
+h4.future-meetups {
+    font-weight: bold;
+    font-size: 200%;
+    margin: 30px 0;
+}
+
 /*===== social links =====*/
 
 .social {

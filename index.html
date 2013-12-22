@@ -8,11 +8,18 @@ layout: default
 <div class="row" ng-controller="NextEventCtrl">
     <div class="span8">
         <section id="NextEventCtrl">
-            <div data-ng-repeat="event in events">
+            <div data-ng-repeat="event in events">                
                 <h2>{[{ getEventTitle(event) }]}</h2>
-                <h3>Location: <a href="http://foundershub.co.uk/" target="_BLANK">Founder's Hub, Cardiff</a></h3>
+                <h3 ng-switch="event.venue.name">
+                    Location:
+                    <a ng-switch-when="FoundersHub" href="http://foundershub.co.uk/" target="_BLANK">{[{ event.venue.name }]}, {[{ event.venue.city }]}</a>
+                    <a ng-switch-default href="{[{ event.event_url }]}" target="_BLANK">{[{ event.venue.name }]}, {[{ event.venue.city }]}</a>
+                </h3>
                 <div ng-bind-html-unsafe="event.description"></div>
-            </div>
+                <img ng-show="$first" src="http://maps.google.com/maps/api/staticmap?center={[{ event.venue.lat }]},{[{ event.venue.lon }]}&zoom=16&markers={[{ event.venue.lat }]},{[{ event.venue.lon }]}&size=500x300&sensor=true" alt="Map of Unified Diff Venue" />
+
+                <h4 ng-show="$first" class="future-meetups">Future meetups:</h4>
+            </div>            
         </section>
     </div>
     <div class="span4">
