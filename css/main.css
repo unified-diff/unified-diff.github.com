@@ -121,7 +121,16 @@ h4.future-meetups {
 
 /*==== attendn ====*/
 
+#attendn p {
+    margin-bottom: 15px;
+}
+
+#attendn .btn {
+    color:#fff;
+}
+
 .attendn ul {
+    margin-left: 0;
     max-height: 600px;
     overflow: scroll;
     overflow-x: hidden;
