@@ -21,28 +21,36 @@ angular.module('unifiedDiffApp', [])
         events: [],
         rsvps: [],
 
+        key: '645a70e62472f2b653773757d1f386',
+
         getThumb: function(rsvp) {
-            if (rsvp.member_photo) {
-                return rsvp.member_photo.thumb_link;
+            if (rsvp.photo_url) {
+                return rsvp.photo_url;
             }
 
             return "https://pbs.twimg.com/profile_images/1777603509/logo-128px_bigger.png";
         },
 
         loadEvents: function() {
-            return $http.get('http://unified-diff.marvelley.com/events.json')
+            var group = 'unified-diff';
+            var url = 'https://api.meetup.com/events?key=' +$scope.key+ '&group_urlname=' +group+ '&callback=JSON_CALLBACK';
+
+            return $http.jsonp(url)
                 .success(function(data) {
-                    $scope.events = data;
+                    $scope.events = data.results;
                 });
         },
 
         loadRsvps: function(response) {
-            var events = response.data;
+            var events = response.data.results;
 
             if (events.length) {
-                $http.get('http://unified-diff.marvelley.com/rsvps/' + events[0].id + '.json')
+                var eventId = events[0].id;
+                var url = 'https://api.meetup.com/rsvps?key=' +$scope.key+ '&callback=JSON_CALLBACK&event_id=' +eventId;
+
+                $http.jsonp(url)
                 .success(function(data) {
-                    $scope.rsvps = _.filter(data, function(user) {
+                    $scope.rsvps = _.filter(data.results, function(user) {
                         return user.response === 'yes';
                     });
                 });
@@ -50,7 +58,10 @@ angular.module('unifiedDiffApp', [])
         },
 
         getEventTitle: function(event) {
-            return moment(event.time).format("Do MMM @ ha") + " - " + event.name;
+            var format = 'Do MMM @ ha';
+            var utc = parseInt(event.utc_time, 10);
+
+            return moment(utc).format(format) + " - " + event.name;
         },
 
         init: function() {
