@@ -10,7 +10,7 @@ Since we started Unified Diff back in 2012 we've hosted the event at
 venues...  Before landing on the perfect location... [Founders Hub](http://foundershub.co.uk/).
 Sadly though, the hub has now closed and left a sizeable whole in the Cardiff tech scene.
 This leaves us and a number of other events in search of a new home, and after a
-lot of looking round and visiting various places we've decided to make that home
+lot of looking around and visiting various places we've decided to make that home
 the [Acorn Recruitment](http://www.acornpeople.com/our-locations-map/south-wales-midlands/cardiff-branch)
 offices just opposite The Castle.
 
