@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% assign tab-blog = 'active' %}
+{% include tabs.html %}
+
+<div class="post">
+    <h2>{{ page.title }}</h2>
+    <div class="post-date">{{ page.date | date: "%-d %B %Y" }}</div>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+</div>
+
