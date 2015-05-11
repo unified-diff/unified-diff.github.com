@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign tab-blog = 'active' %}
+{% include tabs.html %}
+
+<div class="row">
+    <div class="span12">
+        <section id="blog">
+            <ul class="posts">
+                {% for post in site.posts  %}
+                    <li class="post post-summary">
+                        <div class="post-header">
+                            <h2>
+                                <a href="{{ post.url | prepend:site.baseurl/blog }}">{{ post.title }}</a>
+                            </h2>
+                        </div>
+
+                        <div class="post-snippet">
+                            <p>{{ post.content | strip_html | truncatewords:100 }}</p><br/>
+                            <span class="read-button" ><a href="{{ post.url | prepend:site.baseurl/blog }}">Continue Reading</a></span>
+                        </div>
+                    </li>
+                {% endfor %}
+            <ul>
+        </section>
+    </div>
+</div>
+
