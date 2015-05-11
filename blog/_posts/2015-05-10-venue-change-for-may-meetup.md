@@ -8,7 +8,7 @@ Since we started Unified Diff back in 2012 we've hosted the event at
 [number](http://www.coolplaces.co.uk/system/images/4862/P1020088-large.jpg)
 [of](http://1.bp.blogspot.com/-UUV5SCEflwQ/URThyWQ1ffI/AAAAAAAAGb8/Qg0Q5Gje9as/s1600/DSCF9456.JPG)
 venues...  Before landing on the perfect location... [Founders Hub](http://foundershub.co.uk/).
-Sadly though, the hub has now closed and left a sizeable whole in the Cardiff tech scene.
+Sadly though, the hub has now closed and left a sizeable hole in the Cardiff tech scene.
 This leaves us and a number of other events in search of a new home, and after a
 lot of looking around and visiting various places we've decided to make that home
 the [Acorn Recruitment](http://www.acornpeople.com/our-locations-map/south-wales-midlands/cardiff-branch)
