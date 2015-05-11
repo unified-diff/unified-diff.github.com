@@ -45,7 +45,7 @@ h2:before {
 div.container {
     background-image: url(../img/videos.png);
     background-repeat: no-repeat;
-    background-position: 500px 145px;
+    background-position: 420px 180px;
 }
 
 section:nth-of-type(odd) h2 {
@@ -151,6 +151,11 @@ h4.future-meetups {
 }
 
 /*======== blog posts =========*/
+
+ul.posts {
+    list-style: none;
+    margin: 0;
+}
 
 .post-date {
     font-style: italic;
