@@ -45,3 +45,4 @@ chance to eat then don't worry we'll have a bunch of pizza available and some
 beverages to wash it all down.  Then sit back, enjoy the talks, and meet some
 new people.  See you there!
 
+- Rod, May 2015
