@@ -1,6 +1,6 @@
 ---
 layout: post
-title: August update - switching to bi-monthly
+title: August update - switching to every other month
 ---
 
 The Unified Diff team met up recently to discuss how it's going. Jenko made graphs and everything. I ate a pizza that made me feel unusual.
@@ -26,7 +26,7 @@ When we started in 2012, there was very little going on. Now, you have, in or ar
 
 I'm bound to have missed some off, that's just from a quick scan of our [South Wales tech meetups twitter list](https://twitter.com/unifieddiff)... So that leads us on to - is Unified Diff still relevant and necessary? Two factors suggest that it may not be. Firstly, if people aren't volunteering to speak, we can't be the community event we set out to be. Secondly, there are now a large number of meetups, so - achievement unlocked? Mission accomplished?
 
-We are, however, still getting solid numbers of attendees (20 to 30 usually), so for now, we've decided to keep it going on a bi-monthly basis.
+We are, however, still getting solid numbers of attendees (20 to 30 usually), so for now, we've decided to keep it going but only having a meeting every other month.
 
 Feel free to [tweet us](https://twitter.com/unifieddiff) and let us know what you think. Our [next event is scheduled for Thursday September 17th](http://www.meetup.com/unified-diff/events/224469697/).
 
