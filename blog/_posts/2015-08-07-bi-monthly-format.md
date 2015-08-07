@@ -9,7 +9,7 @@ Anyway, we are happy with Acorn as a venue - it puts the focus on the talks.
 
 We have a challenge, however: very few people are coming forward to do talks. Whenever you see me or Warren do a talk, it's often because someone has dropped out or we simply couldn't find a speaker and we're worried you'll get sick of the sight of us!
 
-We seem to be relying on a small group of speakers who are great but we always hoped that we could encourage more people to come forward. We could contact big companies to ask them to send speakers, but when we started Unified Diff, we wanted to be a community event - by local software people for local software people, talking about real things that we do - rather than sitting there being sold something by a tech evangelist.
+We seem to be relying on a small group of speakers who are great but we always hoped that we could encourage more people to come forward. We could contact big companies to ask them to send speakers, but when we started Unified Diff, we wanted it to be a community event - by local software people for local software people, talking about real things that we do - rather than sitting there being sold something by a tech evangelist.
 
 When we started in 2012, there was very little going on. Now, you have, in or around Cardiff:
 
