@@ -1,6 +1,6 @@
 ---
 layout: post
-title: September 2015 - sudo shutdown now
+title: September 2015 - sudo shutdown -h now
 ---
 
 Although we talked about going to a [every other month format](http://unifieddiff.co.uk/blog/2015/08/07/bi-monthly-format.html), this week's Unified Diff might be our last...
